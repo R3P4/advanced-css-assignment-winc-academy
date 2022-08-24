@@ -1,0 +1,84 @@
+body {
+  background: #c3cfe2;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  grid-template-columns: 1;
+  grid-template-rows: 2;
+  grid-template-areas: "main" "footer";
+}
+body main {
+  grid-area: main;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 94%;
+  height: 60%;
+  margin: 40px 20px 0px 20px;
+  padding: 0px;
+  box-shadow: 3px 3px 3px 3px rgba(174, 173, 173, 0.368);
+}
+body main .txtbg {
+  background: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1.8em;
+  word-spacing: 0.1em;
+  padding: 20px 20px 180px 20px;
+}
+body footer {
+  grid-area: footer;
+  border: 5px solid #686de0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: #686de0;
+  width: 94%;
+  height: 40%;
+  margin: 0px 20px 0px 20px;
+  padding: 0px;
+  box-shadow: 3px 3px 3px 3px rgba(128, 128, 128, 0.368);
+}
+body footer img {
+  border: 10px solid white;
+  border-radius: 50%;
+  background: white;
+  margin-top: -80px;
+  margin-bottom: 80px;
+}
+body footer a:link {
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1.8em;
+  word-spacing: 0.1em;
+  padding: 1px;
+}
+body footer a:hover {
+  color: yellow;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1.8em;
+  word-spacing: 0.1em;
+}
+body footer .footer {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 26px;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1.8em;
+  word-spacing: 0.1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}/*# sourceMappingURL=style.css.map */

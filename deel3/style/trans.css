@@ -1,0 +1,74 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(219, 245, 245);
+    overflow-x: hidden;
+}
+
+
+.container {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    align-items: flex-end;
+     margin-top: 120px;
+  }
+  
+.box {
+    width: 200px;
+    height: 200px;
+    transition-duration: 2000ms;
+    transition-property: width;
+    transition-timing-function: cubic-bezier(1,.11,.22,1.41);
+    transition-delay: 200ms;
+    display: flex;
+    justify-content: left;
+  
+ 
+  }
+ 
+  .text {
+     margin: 50px;
+     padding: 30px;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-size: 20px;
+     text-align: center;
+     color:antiquewhite;
+  }
+  a:link {
+    color:goldenrod;
+  }
+.one:hover  {
+    width: 600px;
+    background: #e17b77;
+    transition-timing-function: linear;
+    
+  }
+   .two:hover {
+    width: 600px;
+    background: #3b5998;
+    transition-timing-function: linear;
+    
+  }
+  
+  .three:hover {
+    width: 600px;
+    background: #007bb6; 
+    transition-timing-function: linear;
+  }
+  
+  .four:hover {
+    width: 600px;
+    background:#00aced ;
+    transition-timing-function: linear;
+  }
+  .five:hover {
+    width: 600px;
+    background: #333;
+    transition-timing-function: linear;
+  }
+  
