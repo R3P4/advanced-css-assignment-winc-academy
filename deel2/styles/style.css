@@ -43,20 +43,22 @@ html body main .flex-container .container {
 html body main .flex-container .container .image {
   border: 10px solid white;
   border-radius: 15px;
-  margin: 27px;
+  margin: 20px;
   padding: 0px;
   opacity: 1;
   width: 100%;
-  height: auto;
-  transition: 0.5s ease;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  height: 100%;
+  transition: 0.3s ease-in;
+  -webkit-backface-visibility: visible;
+          backface-visibility: visible;
 }
 html body main .flex-container .container .image:hover {
-  opacity: 0.3;
+  opacity: 0.1;
 }
 html body main .flex-container .container .portret {
-  transition: 0.5s ease;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s ease-in;
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -67,11 +69,34 @@ html body main .flex-container .container .portret {
 html body main .flex-container .container .portret:hover {
   opacity: 1;
 }
-html body main .flex-container .container .portret .text {
-  background-color: #594caf;
+html body main .flex-container .container .text {
+  width: 80%;
+  height: 80%;
+  background-color: #c3cfe2;
+  border: 10px solid #fff;
+  border-radius: 10px;
   color: white;
-  font-size: 16px;
-  padding: 16px 32px;
+  font-size: 26px;
+  margin-top: 9%;
+  margin-left: 7%;
+  padding: 0px;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+html body main .flex-container .container .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: black;
+  border: 5px ridge #fff;
+  border-radius: 10px;
+  color: #fff;
+  margin: 0px;
+  padding: 10px;
 }
 html body footer {
   grid-area: footer;
@@ -206,7 +231,7 @@ html body footer .footer a:link {
     position: relative;
   }
   html body body .flex-container .container .image {
-    border: 10px solid white;
+    border: 10px solid rgb(104, 104, 106);
     border-radius: 15px;
     margin: auto;
     padding: 0px;
@@ -216,6 +241,8 @@ html body footer .footer a:link {
     transition: 0.5s ease;
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
   }
   html body body .flex-container .container .image:hover {
     opacity: 0.3;
@@ -232,10 +259,11 @@ html body footer .footer a:link {
   html body body .flex-container .container .portret:hover {
     opacity: 1;
   }
-  html body body .flex-container .container .portret .text {
+  html body body .flex-container .container .text {
     background-color: #594caf;
     color: white;
     font-size: 16px;
     padding: 16px 32px;
+    border: 2px solid #594caf 10px;
   }
 }/*# sourceMappingURL=style.css.map */

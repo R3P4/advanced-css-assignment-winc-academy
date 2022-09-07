@@ -68,41 +68,59 @@ main {
     .image {
         border: 10px solid white;
         border-radius: 15px;
-        margin: 27px;
+        margin: 20px;
         padding: 0px;
         opacity: 1;
         width: 100%;
-        height: auto;
-        transition: .5s ease;
-        backface-visibility: hidden;
+        height: 100%;
+        transition: .3s ease-in;
+        backface-visibility: visible;
        &:hover {
-        opacity: 0.3;
-        
+        opacity: 0.1;
+       
        }
       
     }
     .portret {
-        transition: .5s ease;
+        width: 100%;
+        height: 100%;
+        transition: .3s ease-in;
         opacity: 0;
         position: absolute;
         top: 50%;
         left: 50%;
+        
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
          &:hover {
          opacity: 1;
-         
-       }
-     .text {
-        background-color: #594caf;
-        color: white;
-        font-size: 16px;
-        padding: 16px 32px;
-      }
-      
-      }
-      
     
+       }
+      
+      }
+      .text {
+        width: 80%;
+        height: 80%;
+        background-color: #c3cfe2;
+        border: 10px solid  #fff;
+        border-radius: 10px;
+        color: white;
+        font-size: 26px;
+        margin-top: 9%;
+        margin-left: 7%;
+        padding: 0px;
+        opacity: 1;
+        @include flexcenter();
+      }
+    .button {
+        @include flexcenter();
+        background-color: black;
+        border: 5px ridge #fff;
+        border-radius: 10px;
+        color: #fff;
+        margin: 0px;
+        padding: 10px;
+    }
     }
   } 
  }
@@ -127,7 +145,7 @@ footer {
         }
     }
 }
-@include media ("<=tablet" min-width 768px){
+@include media ("<=tablet"){
     body {
         display: grid;
         height: 100%;
@@ -194,7 +212,7 @@ footer {
 }
 }
 }
-@include media ("<=desktop" min-width 1024px){
+@include media ("<=desktop"){
     body {
         display: grid;
         height: 100%;
@@ -232,6 +250,8 @@ footer {
                     height: auto;
                     transition: .5s ease;
                     backface-visibility: hidden;
+                    transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
                    &:hover {
                     opacity: 0.3;
                     
@@ -250,14 +270,15 @@ footer {
                      opacity: 1;
                      
                    }
-                 .text {
+                
+                  
+                  }
+                   .text {
                     background-color: #594caf;
                     color: white;
                     font-size: 16px;
                     padding: 16px 32px;
                     border: 2px solid #594caf 10px;
-                  }
-                  
                   }
         }
 }
@@ -266,6 +287,10 @@ footer {
 
 }
 }
+
+
+
+
 
 
 

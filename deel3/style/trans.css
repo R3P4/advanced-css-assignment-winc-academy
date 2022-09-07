@@ -7,6 +7,10 @@ body {
     overflow-x: hidden;
 }
 
+img {
+  width: 100px;
+  height: auto;
+}
 
 .container {
     width: auto;
@@ -19,12 +23,12 @@ body {
   }
   
 .box {
-    width: 200px;
-    height: 200px;
-    transition-duration: 2000ms;
+    width: 100px;
+    height: 100px;
+    transition-duration: 200ms;
     transition-property: width;
     transition-timing-function: cubic-bezier(1,.11,.22,1.41);
-    transition-delay: 200ms;
+    transition-delay: 20ms;
     display: flex;
     justify-content: left;
   
@@ -32,10 +36,10 @@ body {
   }
  
   .text {
-     margin: 50px;
-     padding: 30px;
+     margin: 30px;
+     padding: 0px;
      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-     font-size: 20px;
+     font-size: 18px;
      text-align: center;
      color:antiquewhite;
   }
@@ -43,31 +47,31 @@ body {
     color:goldenrod;
   }
 .one:hover  {
-    width: 600px;
+    width: 400px;
     background: #e17b77;
     transition-timing-function: linear;
     
   }
    .two:hover {
-    width: 600px;
+    width: 400px;
     background: #3b5998;
     transition-timing-function: linear;
     
   }
   
   .three:hover {
-    width: 600px;
+    width: 400px;
     background: #007bb6; 
     transition-timing-function: linear;
   }
   
   .four:hover {
-    width: 600px;
+    width: 400px;
     background:#00aced ;
     transition-timing-function: linear;
   }
   .five:hover {
-    width: 600px;
+    width: 400px;
     background: #333;
     transition-timing-function: linear;
   }
